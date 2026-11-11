@@ -1,0 +1,141 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maintenance - Masa Aktif Berakhir</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #101d3a, #263f70);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    background: #fff;
+    color: #243047;
+    padding: 40px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 45px rgba(0,0,0,.25);
+}
+
+.icon {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #697586;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.status {
+    display: inline-block;
+    background: #fff0d5;
+    color: #b66b00;
+    padding: 9px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.expired {
+    background: #f5f7fa;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 10px 0 20px;
+    font-size: 14px;
+}
+
+button {
+    background: #2459c4;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #19469e;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #9aa3b2;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="icon">🛠️</div>
+
+    <h1>Masa Aktif Telah Berakhir</h1>
+
+    <div class="status">
+        ● STATUS: EXPIRED
+    </div>
+
+    <p>
+        Mohon maaf, layanan website ini sedang
+        dinonaktifkan karena masa aktif telah
+        mencapai batas waktu.
+    </p>
+
+    <div class="expired">
+        <strong>Status layanan:</strong><br>
+        Tidak Aktif
+    </div>
+
+    <p>
+        Silakan hubungi administrator untuk
+        memperpanjang masa aktif dan mengaktifkan
+        kembali layanan.
+    </p>
+
+    <button onclick="location.reload()">
+        Periksa Kembali
+    </button>
+
+    <div class="footer">
+        &copy; <span id="year"></span> Maintenance System
+    </div>
+
+</div>
+
+<script>
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
+```
